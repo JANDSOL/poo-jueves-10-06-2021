@@ -19,6 +19,21 @@ class Condition:
 # print(condition1.num1)
 # print(condition1.num2)
 
-condition2 = Condition(90, 90)
-condition2.useIf()
-print("~ '" + str(condition2.number1) + "'")
+# condition2 = Condition(90, 90)
+# condition2.useIf()
+# print("~ '" + str(condition2.number1) + "'")
+
+
+class Cicle:
+    def __init__(self, num1=5):
+        self.number = num1
+
+    def useWhile(self):
+        car = input("~ Ingrese una vocal: ").lower()
+        while car not in ("a", "á", "e", "é", "i", "í", "o", "ó", "u", "ú"):
+            car = input(" ! Vuelva a ingresar una vocal: ").lower()
+        print('~ Felicidades, el caracter ({}) si es una vocal.'.format(car))
+
+
+ciclo = Cicle()
+ciclo.useWhile()
