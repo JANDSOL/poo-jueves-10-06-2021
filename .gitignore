@@ -1,0 +1,8 @@
+# Environment
+venv/
+
+# Images
+images/
+
+# Visual Studio
+.vscode/
